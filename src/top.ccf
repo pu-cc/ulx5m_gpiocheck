@@ -1,0 +1,181 @@
+## top.ccf for ulx5m-gs
+
+# GPIO Bank WA (Misc. Configuration)
+NET   "cfg_done"       Loc = "IO_WA_B2"; # CFG_DONE
+NET   "cfg_failed"     Loc = "IO_WA_A2"; # CFG_FAILED
+NET   "cfg_md[0]"      Loc = "IO_WA_A0";
+NET   "cfg_md[1]"      Loc = "IO_WA_B0";
+NET   "cfg_md[2]"      Loc = "IO_WA_A1";
+NET   "cfg_md[3]"      Loc = "IO_WA_B1";
+NET   "por_en"         Loc = "IO_WA_A3";
+NET   "spi_fwd"        Loc = "IO_WA_B5"; # unconnected
+
+# GPIO Bank WA (Serial Flash)
+NET   "flash_csb"      Loc = "IO_WA_A8";
+NET   "flash_clk"      Loc = "IO_WA_B8";
+NET   "flash_io0"      Loc = "IO_WA_B7";
+NET   "flash_io1"      Loc = "IO_WA_A7";
+NET   "flash_io2"      Loc = "IO_WA_B6";
+NET   "flash_io3"      Loc = "IO_WA_A6";
+
+# GPIO Bank WA (JTAG Interface)
+NET   "jtag_tck"       Loc = "IO_WA_A5";
+NET   "jtag_tms"       Loc = "IO_WA_B4";
+NET   "jtag_tdi"       Loc = "IO_WA_A4";
+NET   "jtag_tdo"       Loc = "IO_WA_B3";
+
+# SerDes Clock
+NET   "ser_clk"        Loc = "SER_CLK";   # dedicated clock input only
+NET   "ser_clk_n"      Loc = "SER_CLK_N"; # dedicated clock input only
+
+# GPIO Bank NA (1.2V..2.5V)
+NET   "sdram_a[1]"     Loc = "IO_NA_A0";
+NET   "sdram_a[2]"     Loc = "IO_NA_B0";
+NET   "sd_dat[0]"      Loc = "IO_NA_A1";
+NET   "sdram_a[10]"    Loc = "IO_NA_B1";
+NET   "sd_dat[3]"      Loc = "IO_NA_A2";
+NET   "sd_dat[2]"      Loc = "IO_NA_B2";
+NET   "sd_clk"         Loc = "IO_NA_A3";
+NET   "sd_cmd"         Loc = "IO_NA_B3";
+NET   "gpio[14]"       Loc = "IO_NA_A4";
+NET   "gpio[15]"       Loc = "IO_NA_B4";
+NET   "gpio[3]"        Loc = "IO_NA_A5";
+NET   "gpio[2]"        Loc = "IO_NA_B5";
+NET   "gpio[17]"       Loc = "IO_NA_A6";
+NET   "gpio[4]"        Loc = "IO_NA_B6";
+NET   "gpio[18]"       Loc = "IO_NA_A7";
+NET   "gpio[23]"       Loc = "IO_NA_B7";
+NET   "gpio[27]"       Loc = "IO_NA_A8";
+NET   "gpio[22]"       Loc = "IO_NA_B8";
+NET   "gpio[25]"       Loc = "IO_NB_A0";
+NET   "gpio[24]"       Loc = "IO_NB_B0";
+NET   "gpio[9]"        Loc = "IO_NB_A1";
+NET   "gpio[10]"       Loc = "IO_NB_B1";
+NET   "gpio[7]"        Loc = "IO_NB_A2";
+NET   "gpio[8]"        Loc = "IO_NB_B2";
+NET   "fan_pwm"        Loc = "IO_NB_A3";
+NET   "gpio[11]"       Loc = "IO_NB_B3";
+NET   "gpio[16]"       Loc = "IO_NB_A4"; # JTAG_TDO
+NET   "gpio[12]"       Loc = "IO_NB_B4"; # JTAG_TDI
+NET   "sd_dat[1]"      Loc = "IO_NB_A5";
+NET   "gpio[5]"        Loc = "IO_NB_B5";
+NET   "gpio[13]"       Loc = "IO_NB_A6";
+NET   "gpio[6]"        Loc = "IO_NB_B6";
+NET   "gpio[21]"       Loc = "IO_NB_A7"; # JTAG_TMS
+NET   "gpio[20]"       Loc = "IO_NB_B7"; # JTAG_TCK
+NET   "gpio[26]"       Loc = "IO_NB_A8";
+NET   "gpio[19]"       Loc = "IO_NB_B8";
+
+# USB, SD + RGMII (GPIO Bank EA+EB)
+NET   "usb25_p"        Loc = "IO_EA_A0";
+NET   "usb25_n"        Loc = "IO_EA_B0";
+NET   "usb25_p"        Loc = "IO_EA_A1";
+NET   "usb25_n"        Loc = "IO_EA_B1";
+NET   "usb_pull_p"     Loc = "IO_EA_A2";
+NET   "usb_pull_n"     Loc = "IO_EA_B2";
+NET   "usb_otg_id"     Loc = "IO_EA_A3";
+NET   "btn3"           Loc = "IO_EA_B3";
+NET   "btn2"           Loc = "IO_EA_A4";
+NET   "btn1"           Loc = "IO_EA_B4";
+NET   "sda0"           Loc = "IO_EA_A5";
+NET   "scl0"           Loc = "IO_EA_B5";
+NET   "id_sd"          Loc = "IO_EA_A6";
+NET   "id_sc"          Loc = "IO_EA_B6";
+NET   "sd_dat[4]"      Loc = "IO_EA_A7";
+NET   "sd_dat[5]"      Loc = "IO_EA_B7";
+NET   "sd_dat[6]"      Loc = "IO_EA_A8";
+NET   "sd_dat[7]"      Loc = "IO_EA_B8";
+NET   "rgmii_rxd[0]"   Loc = "IO_EB_A0";
+NET   "rgmii_rxd[1]"   Loc = "IO_EB_B0";
+NET   "rgmii_rxd[2]"   Loc = "IO_EB_A1";
+NET   "rgmii_rxd[3]"   Loc = "IO_EB_B1";
+NET   "rgmii_txen"     Loc = "IO_EB_A2";
+NET   "rgmii_tx_clk"   Loc = "IO_EB_B2";
+NET   "eth_clk"        Loc = "IO_EB_A3";
+NET   "rgmii_rst_n"    Loc = "IO_EB_B3";
+NET   "rgmii_txd[3]"   Loc = "IO_EB_A4";
+NET   "rgmii_txd[2]"   Loc = "IO_EB_B4";
+NET   "rgmii_txd[1]"   Loc = "IO_EB_A5";
+NET   "rgmii_txd[0]"   Loc = "IO_EB_B5";
+NET   "rgmii_mdio"     Loc = "IO_EB_A6";
+NET   "rgmii_mdc"      Loc = "IO_EB_B6";
+NET   "rgmii_rx_clk"   Loc = "IO_EB_A7";
+NET   "rgmii_int_n"    Loc = "IO_EB_B7";
+NET   "rgmii_rx_dv"    Loc = "IO_EB_A8";
+NET   "rgmii_refclk"   Loc = "IO_EB_B8";
+
+# LVDS, DDMIO + LED (GPIO Bank SA+SB)
+NET   "lvds1_d_p[2]"   Loc = "IO_SA_A0";
+NET   "lvds1_d_n[2]"   Loc = "IO_SA_B0";
+NET   "lvds1_c_p"      Loc = "IO_SA_A1";
+NET   "lvds1_c_n"      Loc = "IO_SA_B1";
+NET   "lvds1_d_p[1]"   Loc = "IO_SA_A2";
+NET   "lvds1_d_n[1]"   Loc = "IO_SA_B2";
+NET   "lvds1_d_p[0]"   Loc = "IO_SA_A3";
+NET   "lvds1_d_n[0]"   Loc = "IO_SA_B3";
+NET   "lvds0_d_p[3]"   Loc = "IO_SA_A4";
+NET   "lvds0_d_n[3]"   Loc = "IO_SA_B4";
+NET   "lvds0_d_p[2]"   Loc = "IO_SA_A5";
+NET   "lvds0_d_n[2]"   Loc = "IO_SA_B5";
+NET   "lvds0_c_p"      Loc = "IO_SA_A6";
+NET   "lvds0_c_n"      Loc = "IO_SA_B6";
+NET   "lvds0_d_p[1]"   Loc = "IO_SA_A7";
+NET   "lvds0_d_n[1]"   Loc = "IO_SA_B7";
+NET   "lvds0_d_p[0]"   Loc = "IO_SA_A8";
+NET   "lvds0_d_n[0]"   Loc = "IO_SA_B8";
+NET   "led[0]"         Loc = "IO_SB_A0";
+NET   "led[1]"         Loc = "IO_SB_B0";
+NET   "led[2]"         Loc = "IO_SB_A1";
+NET   "led[3]"         Loc = "IO_SB_B1";
+NET   "led[5]"         Loc = "IO_SB_A2";
+NET   "led[4]"         Loc = "IO_SB_B2";
+NET   "led[7]"         Loc = "IO_SB_A3";
+NET   "led[6]"         Loc = "IO_SB_B3";
+NET   "ddmio_tx_p[0]"  Loc = "IO_SB_A4";
+NET   "ddmio_tx_n[0]"  Loc = "IO_SB_B4";
+NET   "ddmio_tx_p[1]"  Loc = "IO_SB_A5";
+NET   "ddmio_tx_n[1]"  Loc = "IO_SB_B5";
+NET   "ddmio_tx_p[2]"  Loc = "IO_SB_A6";
+NET   "ddmio_tx_n[2]"  Loc = "IO_SB_B6";
+NET   "ddmio_clk_p"    Loc = "IO_SB_A7";
+NET   "ddmio_clk_n"    Loc = "IO_SB_B7";
+NET   "clk_25mhz"      Loc = "IO_SB_A8";
+NET   "pwr_btn"        Loc = "IO_SB_B8";
+
+# SDRAM (GPIO Banks WB+WC)
+NET   "sdram_ncs"      Loc = "IO_WB_A0";
+NET   "sdram_nwe"      Loc = "IO_WB_B0";
+NET   "sdram_a[3]"     Loc = "IO_WB_A1";
+NET   "sdram_d[6]"     Loc = "IO_WB_B1";
+NET   "sdram_d[3]"     Loc = "IO_WB_A2";
+NET   "sdram_d[1]"     Loc = "IO_WB_B2";
+NET   "sdram_dqm[0]"   Loc = "IO_WB_A3";
+NET   "sdram_d[7]"     Loc = "IO_WB_B3";
+NET   "sdram_d[2]"     Loc = "IO_WB_A4";
+NET   "sdram_d[0]"     Loc = "IO_WB_B4";
+NET   "sdram_d[4]"     Loc = "IO_WB_A5";
+NET   "sdram_d[5]"     Loc = "IO_WB_B5";
+NET   "sdram_nras"     Loc = "IO_WB_A6";
+NET   "sdram_ncas"     Loc = "IO_WB_B6";
+NET   "sdram_ba[0]"    Loc = "IO_WB_A7";
+NET   "sdram_a[6]"     Loc = "IO_WB_B7";
+NET   "sdram_ba[1]"    Loc = "IO_WB_A8";
+NET   "sdram_a[0]"     Loc = "IO_WB_B8";
+NET   "sdram_a[11]"    Loc = "IO_WC_A0";
+NET   "sdram_a[9]"     Loc = "IO_WC_B0";
+NET   "sdram_clk"      Loc = "IO_WC_A1";
+NET   "sdram_cke"      Loc = "IO_WC_B1";
+NET   "sdram_d[14]"    Loc = "IO_WC_A2";
+NET   "sdram_d[13]"    Loc = "IO_WC_B2";
+NET   "sdram_d[15]"    Loc = "IO_WC_A3";
+NET   "sdram_d[12]"    Loc = "IO_WC_B3";
+NET   "sdram_d[11]"    Loc = "IO_WC_A4";
+NET   "sdram_d[9]"     Loc = "IO_WC_B4";
+NET   "sdram_d[10]"    Loc = "IO_WC_A5";
+NET   "sdram_dqm[1]"   Loc = "IO_WC_B5";
+NET   "sdram_d[8]"     Loc = "IO_WC_A6";
+NET   "sdram_a[7]"     Loc = "IO_WC_B6";
+NET   "sdram_a[8]"     Loc = "IO_WC_A7";
+NET   "sdram_a[5]"     Loc = "IO_WC_B7";
+NET   "sdram_a[12]"    Loc = "IO_WC_A8";
+NET   "sdram_a[4]"     Loc = "IO_WC_B8";
