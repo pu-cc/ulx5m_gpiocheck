@@ -140,7 +140,7 @@ NET   "ddmio_tx_n[2]"  Loc = "IO_SB_B6";
 NET   "ddmio_clk_p"    Loc = "IO_SB_A7";
 NET   "ddmio_clk_n"    Loc = "IO_SB_B7";
 NET   "clk_25mhz"      Loc = "IO_SB_A8";
-NET   "pwr_btn"        Loc = "IO_SB_B8";
+NET   "pwr_btn_n"      Loc = "IO_SB_B8" | pullup=true;
 
 # SDRAM (GPIO Banks WB+WC)
 NET   "sdram_ncs"      Loc = "IO_WB_A0";
